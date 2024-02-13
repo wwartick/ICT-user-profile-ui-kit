@@ -32,11 +32,6 @@
     background-color: var(--tertiary-color);
 }
 
-.views-stats,
-.user-profile{
-    opacity: 0;
-}
-
 .app-stats{
     height: 18em;
     width: 20em;
@@ -103,8 +98,107 @@
 
 }
 
-img{
-    height: 3em;
-    aspect-ratio: 1;
-    border-radius: 50%;
+.views-stats{
+    height:7em;
+    width: 28em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    top: -11em;
+    right: 10em;
+    border-radius: 10px;
+    box-shadow: 0px 15px 23px -7px #000000;
 }
+
+.icon-holder{
+    padding-left:1.5em;
+    display: flex;
+    align-items: center;
+    gap: .5em;
+    font-weight: bolder;
+    letter-spacing: -1px;
+    font-size: 1.25em;
+
+    ion-icon{
+        font-size: 1.5em;
+        font-weight: 700;
+    }
+}
+
+.triple-pics{
+    padding-right: 2.75em;
+}
+
+.triple-pics > img{
+    border: 2px solid var(--secondary-color);
+    background-color: var(--primary-color);
+    height: 2.5em;
+    aspect-ratio: 1;
+    margin-right: -1.25em;
+    border-radius: 50%;
+    transition: 700ms linear;
+
+    &:hover{
+        cursor: pointer;
+        scale: 1.75;
+        margin-right: 2em;
+        border: 2px solid var(--primary-color);
+    }
+}
+
+.user-profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5em;
+    width: 17em;
+    height: 18em;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0px 15px 23px -7px #000000;
+    bottom: 11em;
+    left: 22em;
+
+    img{
+        aspect-ratio: 1;
+        height: 6em;
+        border-radius: 50%;
+        margin-top: 2.2em;
+        border: 8px solid #7077a14b;
+        object-fit:cover;
+
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}
+
+.pro{
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    margin-top: -2em;
+    font-size: .75em;
+    padding: 4px 5px;
+    color: var(--tertiary-color);
+}
+
+.full-name{
+    font-weight: 700;
+    font-size: 1.15em;
+}
+
+.user-name{
+    font-size: .75em;
+}
+
+.follower-following{
+    margin-top: 2.5em;
+    font-size: .8em;
+    user-select: none;
+
+    &:hover{
+        cursor: pointer;
+    }
+}
+
